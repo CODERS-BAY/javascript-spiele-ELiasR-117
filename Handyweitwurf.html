@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGames</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+    <nav>
+        <a href="index.html"><img class="Logo" src="images/gamer-logo-vector-illustration-gamepad-video-games-hand-inscription-let-s-play-print-lover-computer-image-183229350.jpg" /></a>
+        <ul>
+        <li><a href="Handyweitwurf.html" >HANDYWEITWURF</a></li>
+        <li><a href="Schere, Stein, Papier.html" >SCHERE, STEIN, PAPIER</a></li>
+        <li><a href="ZahlenRaten.html" >ZAHLEN RATEN</a></li>
+        <li><a href="CodeBreaker.html" >CODE BREAKER</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main class="handymain">
+        <div>
+            <h1>Willkommen beim Handyweitwurf :)</h1>
+            <div class="planet">
+                <h4>Bei diesem Spiel versuchen Sie auf dem Planeten ihrer Wahl 
+                    ein Monster mit ihrem Handy abzuschießen. 
+                    Sie können die Wurfkraft und den Winkel eingeben,  
+                    je nachdem wie weit und wie hoch Sie schießen wollen.
+                    Sie haben drei Versuche. </h4>
+                    <h4>Wählen Sie den Planeten, die Fallbeschleunigung ist auf jedem Planeten anders!</h4>
+                
+            <select name="Planets" id="Gravity">
+                <option value="Earth">Erde 9.81 m/s²</option>
+                <option value="Mars">Mars 3.69 m/s²</option>
+                <option value="Jupiter">Jupiter 24.79 m/s²</option>
+                <option value="Moon">Mond 1.62 m/s²</option>
+            </select>
+            </div>
+            <div>
+            <input id="throwingPower" type="text" min="1" max="1000" placeholder="Wurfkraft" required/>
+            <input id="angle" type="text" min="1" max="90" placeholder="Flugwinkel" required/>
+            <button onclick="throwHandy()">Wurf</button>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <nav>
+        <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="dataprotection.html">Datenschutz</a></li>
+            <li><a href="Copyright.html">© Copyright 2021</a></li>
+        </ul>
+        </nav>
+    </footer>
+
+
+<script type="text/Javascript" src="../MyGames/JS/MyGames.js"></script>
+</body>

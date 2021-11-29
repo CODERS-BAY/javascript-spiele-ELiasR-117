@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGames</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="Logo" src="images/gamer-logo-vector-illustration-gamepad-video-games-hand-inscription-let-s-play-print-lover-computer-image-183229350.jpg" /></a>
+            <ul>
+            <li><a href="Handyweitwurf.html" >HANDYWEITWURF</a></li>
+            <li><a href="Schere, Stein, Papier.html" >SCHERE, STEIN, PAPIER</a></li>
+            <li><a href="ZahlenRaten.html" >ZAHLEN RATEN</a></li>
+            <li><a href="CodeBreaker.html" >CODE BREAKER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="ZahlenRaten">
+        <h1>ZAHLEN RATEN</h1>
+        <p>Bei diesem Spiel suchen Sie sich ein oberes Limit, wieviele Versuche
+            Sie wünschen und dann können Sie mit dem Raten ganz unten beginnen.
+        </p>
+        <div>
+            <h3>Bitte geben Sie ein wieviele Versuche Sie möchten</h3>
+            <input id="tries" type="text" min="1" max="20" placeholder="1-20" required>
+            <h3>Bitte geben Sie ein oberes Limit der Zahlen an</h3>
+            <input id="limit" type="text" min="0" max="1000" placeholder="1-1000" required>
+            <h3>Ihr Versuch</h3>
+            <input id="guess" type="text" min="0" max="1000" required>
+            <button onclick="guessingNumber()">Versuch</button>
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+        <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="dataprotection.html">Datenschutz</a></li>
+            <li><a href="Copyright.html">© Copyright 2021</a></li>
+        </ul>
+        </nav>
+    </footer>
+
+    <script type="text/Javascript" src="../MyGames/JS/MyGames.js"></script>
+</body>
